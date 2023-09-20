@@ -1,9 +1,9 @@
-{% if category != "hidden" %}
 {% extends "base.html" %}
-{% else %}
-{% extends "base_2.html" %}
+{% block head %}
+{% if category != "hidden" %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/sidebar.css">
 {% endif %}
-
+{% endblock head %}
 {% block sidebar %}
 <ul>
     {% for cat, articles in categories %}

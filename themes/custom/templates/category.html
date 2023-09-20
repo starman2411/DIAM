@@ -1,5 +1,7 @@
 {% extends "base.html" %}
-
+{% block head %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/sidebar.css">
+{% endblock head %}
 {% block sidebar %}
     <ul>
         {% for article in articles %}
