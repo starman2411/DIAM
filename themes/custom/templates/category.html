@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+    <ul>
+        {% for article in articles %}
+        <li><a class="custom_link"  href="/{{article.url}}">{{article.title}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock sidebar %}
+
+
+{% block article %}
+        <p>{{ (articles|first).content }}</p>
+{% endblock article %}

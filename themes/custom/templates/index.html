@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+<ul>
+    {% for cat, articles in categories %}
+
+    {% if cat == 'Главная' %}
+    {% for article_ in articles %}
+    <a class="custom_link"  href="/{{article_.url}}">{{article_.title}}</a>
+    {% endfor %}
+    {% endif %}
+
+    {% endfor %}
+</ul>
+
+{% endblock sidebar %}
+
+{% block article %}
+<p>{{ (articles|first).content }}</p>
+
+{% endblock article %}

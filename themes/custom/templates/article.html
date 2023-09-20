@@ -1,0 +1,23 @@
+{% if category != "hidden" %}
+{% extends "base.html" %}
+{% else %}
+{% extends "base_2.html" %}
+{% endif %}
+
+{% block sidebar %}
+<ul>
+    {% for cat, articles in categories %}
+
+    {% if cat == category %}
+    {% for article_ in articles %}
+    <li><a class="custom_link" href="/{{article_.url}}">{{article_.title}}</a></li>
+    {% endfor %}
+    {% endif %}
+
+    {% endfor %}
+</ul>
+{% endblock sidebar %}
+
+{% block article %}
+<p>{{article.content}}</p>
+{% endblock article %}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <style>
+        html * {
+            font-family: Arial;
+        }
+
+        nav {
+            /* background-color: red; */
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            border-bottom: 2px solid #0069b5;
+            padding: 5px 0px;
+            font-style: normal;
+        }
+
+        header {
+            /* background-color: yellow; */
+            background-color: #0069b5;
+            color: white;
+            font-size: 28px;
+            font-style: italic;
+        }
+
+        article {
+            /* background-color: purple; */
+            background-color: white;
+            color: black;
+            width: 80%;
+            margin: 0px 20px;
+        }
+
+        main {
+            /* background-color: blue; */
+            background-color: white;
+        }
+
+        .sidebar {
+            /* background-color: green; */
+            background-color: white;
+            font-size: 120%;
+            font-weight: bold;
+            width: 20%;
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul>li {
+            list-style-type: none;
+        }
+
+        main {
+            display: flex;
+        }
+
+        body {
+            width: 80%;
+            margin: auto;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .sidebar {
+            font-size: 15px;
+            border: 3px solid rgb(240, 240, 240);
+            height: fit-content;
+            margin: 10px;
+        }
+
+        .sidebar ul {
+            padding: 10px 10px;
+            margin: 0px 0px;
+        }
+
+        .sidebar a {
+            width: 100%;
+            height: max-content;
+            float: left;
+            color: #0069b5;
+            border-bottom: 1px solid rgb(240, 240, 240);
+            padding: 7px 0px 6px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Кафедра информатики и вычислительной математики</h1>
+
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/category/hidden.html">hidden</a></li>
+                <li><a href="/category/novosti.html">Новости</a></li>
+                <li><a href="/category/podkasty.html">Подкасты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class='sidebar'>
+    <ul>
+        <li><a href="/5th-post.html">5th post</a></li>
+    </ul>
+        </div>
+        <article>
+        <p><!-- Category: hidden -->
+<p>Slug: 5th_article</p>
+<!-- status: hidden -->
+<p><font size = 5><strong>Скрытая статья 2</strong></font><br>
+Птицы прилетели, птицы посидели, зёрна поели и улетели.</p></p>
+        </article>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

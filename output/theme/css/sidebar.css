@@ -1,0 +1,29 @@
+ .sidebar {
+    background-color: white;
+    width: 20%;
+}
+
+ .sidebar {
+    font-size: 15px;
+    border: 3px solid rgb(240, 240, 240);
+    height: fit-content;
+    margin: 10px;
+}
+
+.sidebar ul {
+    padding: 10px 10px;
+    margin: 0 0;
+}
+
+.sidebar a {
+    width: 100%;
+    height: max-content;
+    float: left;
+    color: #0069b5;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    padding: 7px 0 6px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
